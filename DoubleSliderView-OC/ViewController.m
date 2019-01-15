@@ -66,17 +66,13 @@
     if (isLeft) {
         CGFloat age = (self.maxAge - self.minAge) * self.doubleSliderView.curMinValue;
         CGFloat tmpAge = [self fetchIntFromValue:age];
-        if (tmpAge != age) {
-            self.curMinAge = (NSInteger)tmpAge + self.minAge;
-            [self changeAgeTipsText];
-        }
+        self.curMinAge = (NSInteger)tmpAge + self.minAge;
+        [self changeAgeTipsText];
     }else {
         CGFloat age = (self.maxAge - self.minAge) * self.doubleSliderView.curMaxValue;
         CGFloat tmpAge = [self fetchIntFromValue:age];
-        if (tmpAge != age) {
-            self.curMaxAge = (NSInteger)tmpAge + self.minAge;
-            [self changeAgeTipsText];
-        }
+        self.curMaxAge = (NSInteger)tmpAge + self.minAge;
+        [self changeAgeTipsText];
     }
     if (finish) {
         [self changeSliderValue];
