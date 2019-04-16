@@ -12,3 +12,6 @@
 增加了最小间隙
 
 ![image](https://github.com/anonymity-du/DoubleSliderView-swift/blob/master/imageFolder/doubleslider_2.gif)
+
+
+[此处](https://github.com/crazypoo/PTools/blob/master/PooTools/DoubleSliderView.m)为网友提供的自动布局版本
